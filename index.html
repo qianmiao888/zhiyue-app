@@ -60,11 +60,11 @@
   </p>
 
   <div class="cta">
-    <a class="btn" href="https://github.com/qianmiao888/zhiyue-app/releases/download/v1.2.0/zhiyue-v1.2.0.apk">下载 APK（50.5 MB）</a>
+    <a class="btn" href="https://github.com/qianmiao888/zhiyue-app/releases/download/v1.2.1/zhiyue-v1.2.1.apk">下载 APK（50.5 MB）</a>
     <a class="btn ghost" href="https://github.com/qianmiao888/zhiyue-app/releases">历史版本</a>
   </div>
   <div class="meta">Android 8.0 及以上 · 免登录 · 无需网络 · 无付费 · 无邀请码<br />
-  SHA-256：<code style="font-size:10px">A8567FA9030F73D04A4CAA1735EF5E5EB4FED8EA211EB9186E2EEBC4C03807C9</code></div>
+  SHA-256：<code style="font-size:10px">5A20D83858A603270E0C8A9629D7BC94A333D676E306E08BE2032365F11C2946</code></div>
 
   <div class="grid">
     <div class="pill"><b>AI 逐字时序</b><span>真实音节对齐，告别等时长停留</span></div>
@@ -77,7 +77,7 @@
     <ol>
       <li>用安卓手机打开本页，点击上方「下载 APK」。</li>
       <li>浏览器提示"此类文件可能有害"时，选择「仍要下载」。</li>
-      <li>打开下载好的 <code>zhiyue-v1.2.0.apk</code>，按提示允许「安装未知应用」（仅需一次）。</li>
+      <li>打开下载好的 <code>zhiyue-v1.2.1.apk</code>，按提示允许「安装未知应用」（仅需一次）。</li>
       <li>安装完成后，桌面出现「指月」图标。</li>
     </ol>
     <div class="warn">若使用微信内置浏览器打开，请点右上角「···」→「在浏览器打开」后再下载。</div>
@@ -88,14 +88,14 @@
     <h3>推荐：演示模式（无需任何权限）</h3>
     <ol>
       <li>打开应用 → 首页任选一套法会（瑜伽焰口 / 梁皇宝忏·起忏 / 药师普佛 / 阿弥陀佛普佛）→ 保持「演示模式」→ 点「开始演示」。</li>
-      <li>应用自动播放该法会唱段，屏幕显示当前段落与下一段；法本按唱诵逐字点亮，已诵字变暗、当前字高亮。</li>
+      <li>应用自动播放该法会内置录音，字幕与录音由同一播放时钟推进；屏幕显示当前段落与下一段，法本按唱诵逐字点亮，已诵字变暗、当前字高亮。</li>
       <li>点「下一段 / 上一段」可手动纠偏；点「暂停」可停下；点「结束」进入回向页。</li>
     </ol>
-    <h3>进阶：现场模式（验证真实识别）</h3>
+    <h3>进阶：现场模式（实验性）</h3>
     <ol>
       <li>首页选择「现场模式」→「开始跟诵」→ 首次会请求麦克风权限，选择「允许」。</li>
       <li>把手机放在能听清唱诵的位置（或对着另一台播放唱诵的设备），应用会在约 1–3 秒内锁定段落并持续跟踪。</li>
-      <li>若环境嘈杂，可先把手机靠近声源；识别不稳时用「下一段」手动纠偏即可。</li>
+      <li>该能力仍在迭代：环境嘈杂或音色差异较大时可能跟踪不稳，建议用「下一段」手动纠偏，或直接使用演示模式。</li>
     </ol>
   </div>
 
@@ -120,6 +120,10 @@
       后续新增《梁皇宝忏》《三时系念》或日常课诵，只需补模板与音轨，不必改代码。
       v1.2.0 起，逐字时间轴由构建期 faster-whisper 识别真实音节位置生成（AI 段），端侧仍只做一次查表，不进 APK、不在端侧推理。
     </p>
+    <p>
+      演示模式下，应用播放内置录音，字幕与录音共用同一播放时钟，因此逐字点亮与音频天然对齐；
+      这是回放同步，不是实时识别。实时识别对应「现场模式」，为实验性能力。
+    </p>
   </div>
 
   <div class="card">
@@ -138,7 +142,7 @@
   </div>
 
   <footer>
-    指月 v1.2.0 · TRAE 好应用大赏参赛作品 · 学习生活赛道<br />
+    指月 v1.2.1 · TRAE 好应用大赏参赛作品 · 学习生活赛道<br />
     <a href="https://github.com/qianmiao888/zhiyue-app">项目主页</a>
   </footer>
 </div>
