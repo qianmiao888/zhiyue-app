@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>指月 · AI 梵呗唱诵进度同步</title>
+<meta name="description" content="指月：面向法会与梵呗学习的安卓应用，端侧识别唱诵次第，实时同步法本进度。免登录、全离线。" />
+<style>
+  :root{
+    --ink:#12100e; --soft:#1c1915; --line:#2c261e;
+    --gold:#d8b26a; --gold-dim:#8b7546; --paper:#ede4d3; --dim:#9b8f7a; --jade:#7fa08a;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--ink); color:var(--paper);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.75; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:56px 22px 72px}
+  .moon{font-size:13px;letter-spacing:.3em;color:var(--gold-dim);text-transform:uppercase}
+  h1{font-size:44px;margin:10px 0 6px;font-weight:500;letter-spacing:.06em}
+  .sub{color:var(--dim);font-size:16px;margin:0}
+  .lead{color:var(--paper);opacity:.85;margin:22px 0 0;font-size:15px}
+  .cta{
+    display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:28px 0 6px
+  }
+  .btn{
+    display:inline-block;background:var(--gold);color:var(--ink);text-decoration:none;
+    padding:14px 26px;border-radius:999px;font-weight:600;font-size:16px
+  }
+  .btn.ghost{background:transparent;color:var(--paper);border:1px solid var(--line);font-weight:400}
+  .meta{color:var(--dim);font-size:12px;margin-top:10px}
+  .card{
+    background:var(--soft);border:1px solid var(--line);border-radius:20px;padding:22px;margin-top:26px
+  }
+  h2{font-size:18px;margin:0 0 12px;font-weight:500;color:var(--gold)}
+  h3{font-size:14px;margin:18px 0 6px;color:var(--paper)}
+  p,li{font-size:14px;color:#cfc6b6}
+  ol,ul{margin:8px 0 0;padding-left:22px}
+  li{margin:6px 0}
+  code{background:#241f18;color:var(--gold);padding:2px 6px;border-radius:6px;font-size:13px}
+  .grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:26px}
+  .pill{background:var(--soft);border:1px solid var(--line);border-radius:16px;padding:16px}
+  .pill b{display:block;color:var(--gold);font-weight:500;margin-bottom:4px;font-size:14px}
+  .pill span{font-size:12px;color:var(--dim)}
+  .warn{border-left:3px solid var(--gold);padding-left:14px;color:var(--dim);font-size:12px;margin-top:10px}
+  footer{margin-top:42px;color:#5f5748;font-size:11px;border-top:1px solid var(--line);padding-top:18px}
+  a{color:var(--gold)}
+  @media (max-width:640px){ .grid{grid-template-columns:1fr} h1{font-size:36px} .wrap{padding-top:40px} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="moon">瑜伽焰口 · 梵呗同行</div>
+  <h1>指月</h1>
+  <p class="sub">梵呗唱诵进度同步 · 知道你此刻唱到哪一段</p>
+  <p class="lead">
+    法会现场，参与者常常听得懂、却不知道唱到第几段、哪一句、哪一个字。
+    指月用端侧声学对齐，把"唱到哪儿了"变成法本上逐字点亮的光标。
+  </p>
+
+  <div class="cta">
+    <a class="btn" href="zhiyue-v1.2.1.apk" download>下载 APK（50.5 MiB）</a>
+    <a class="btn ghost" href="https://github.com/qianmiao888/zhiyue-app/releases">历史版本</a>
+  </div>
+  <div class="meta">Android 8.0 及以上 · 免登录 · 无需网络 · 无付费 · 无邀请码<br />
+  SHA-256：<code style="font-size:10px">69DC93F310CE27860BF31911948CA2E70B16E4AC3ABF091DABE73A3E5B763740</code></div>
+
+  <div class="grid">
+    <div class="pill"><b>AI 逐字时序</b><span>真实音节对齐，告别等时长停留</span></div>
+    <div class="pill"><b>端侧识别</b><span>飞行模式可用，音频不出设备</span></div>
+    <div class="pill"><b>四套仪轨</b><span>焰口 / 梁皇 / 药师 / 阿弥陀佛普佛</span></div>
+  </div>
+
+  <div class="card">
+    <h2>安装方式</h2>
+    <ol>
+      <li>用安卓手机打开本页，点击上方「下载 APK」。</li>
+      <li>浏览器提示"此类文件可能有害"时，选择「仍要下载」。</li>
+      <li>打开下载好的 <code>zhiyue-v1.2.1.apk</code>，按提示允许「安装未知应用」（仅需一次）。</li>
+      <li>安装完成后，桌面出现「指月」图标。</li>
+    </ol>
+    <div class="warn">若使用微信内置浏览器打开，请点右上角「···」→「在浏览器打开」后再下载。</div>
+  </div>
+
+  <div class="card">
+    <h2>进入体验（30 秒上手）</h2>
+    <h3>推荐：演示模式（无需任何权限）</h3>
+    <ol>
+      <li>打开应用 → 首页任选一套法会（瑜伽焰口 / 梁皇宝忏·起忏 / 药师普佛 / 阿弥陀佛普佛）→ 保持「演示模式」→ 点「开始演示」。</li>
+      <li>应用自动播放该法会内置录音，法本以歌词形式排列；当前句自动居中放大，已唱内容按真实播放位置逐字变为金色。</li>
+      <li>点「下一段 / 上一段」可手动纠偏；点「暂停」可停下；点「结束」进入回向页。</li>
+    </ol>
+    <h3>进阶：现场模式（实验性）</h3>
+    <ol>
+      <li>首页选择「现场模式」→「开始跟诵」→ 首次会请求麦克风权限，选择「允许」。</li>
+      <li>把手机放在能听清唱诵的位置（或对着另一台播放唱诵的设备），应用会在听清唱诵后锁定段落并持续跟踪，前奏期间不会伪造字幕位置。</li>
+      <li>该能力仍在迭代：环境嘈杂或音色差异较大时可能跟踪不稳，建议用「下一段」手动纠偏，或直接使用演示模式。</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h2>账号与权限说明</h2>
+    <p><b>账号：</b>不需要。应用无登录、无注册、无付费、无邀请码，打开即用。</p>
+    <p><b>网络：</b>不需要。音频与法本全部内置，飞行模式下功能完整。</p>
+    <p><b>权限：</b>仅「麦克风」，且只在现场模式首次进入时请求；拒绝后仍可使用演示模式完整体验。</p>
+    <p><b>隐私：</b>不采集、不上传任何音频与个人信息，无第三方统计 SDK。</p>
+  </div>
+
+  <div class="card">
+    <h2>它怎么工作</h2>
+    <p>
+      梵呗有三个结构性特征：谱本固定、唱腔稳定、段落边界清晰。因此"唱到哪儿"不必依赖通用语音识别，
+      而是一个音频-谱本对齐问题：端侧提取 log-mel 声学特征，先用窗口指纹粗筛，再以完整逐帧特征精排，
+      结合段边界约束、连续跟踪与重新锁定，得到段落与句字位置。
+    </p>
+    <p>
+      模型与参考特征随 APK 内置（约 2.7 MB），无需联网、无需算力服务器；
+      只有声学锁定后才更新法本位置，未锁定时明确显示识别中。本版本针对内置四套音轨定向适配。
+      法会即一份 JSON 模板（段落、法本、参考音轨），
+      后续新增《梁皇宝忏》《三时系念》或日常课诵，只需补模板与音轨，不必改代码。
+      v1.2.0 起，逐字时间轴由构建期 faster-whisper 识别真实音节位置生成（AI 段），端侧仍只做一次查表，不进 APK、不在端侧推理。
+    </p>
+    <p>
+      演示模式下，应用播放内置录音，字幕与录音共用同一播放时钟，因此逐字点亮与音频天然对齐；
+      这是回放同步，不是实时识别。实时识别对应「现场模式」，为实验性能力。
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>内置内容与来源</h2>
+    <p>内置四套法会仪轨，可在首页直接切换：</p>
+    <ul>
+      <li>《瑜伽焰口》核心十段，约 29 分钟</li>
+      <li>《梁皇宝忏 · 起忏》六段赞偈，约 33 分钟</li>
+      <li>《药师普佛》香赞 · 药师赞 · 回向，约 22 分钟</li>
+      <li>《阿弥陀佛普佛》香赞 · 弥陀赞 · 赞礼西方 · 拜愿 · 回向，约 47 分钟</li>
+    </ul>
+    <p style="color:var(--dim);font-size:12px">
+      音源：牟尼佛法流通网公开唱诵录音（悟禅法师《瑜伽焰口》、《梁皇宝忏》起忏唱段；戒定真香·能真法师；药师赞；回向偈），
+      仅用于个人学习与演示，不作商用。法本文本以现场法师唱诵为准。
+    </p>
+  </div>
+
+  <footer>
+    指月 v1.2.1 · 四套法会 · 端侧唱诵进度同步<br />
+    <a href="https://github.com/qianmiao888/zhiyue-app">项目主页</a>
+  </footer>
+</div>
+</body>
+</html>

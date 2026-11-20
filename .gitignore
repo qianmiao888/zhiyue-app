@@ -1,0 +1,23 @@
+# Gradle / Android
+.gradle/
+.kotlin/
+build/
+local.properties
+*.iml
+.idea/
+
+# 签名密钥与口令
+app/keystore/
+*.jks
+*.keystore
+
+# 构建产物
+dist/*.apk
+
+# Python
+__pycache__/
+*.pyc
+
+# 系统
+.DS_Store
+Thumbs.db
